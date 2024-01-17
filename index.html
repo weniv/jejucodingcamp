@@ -1,698 +1,736 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>제주코딩베이스캠프</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script type="text/javascript">
+      WebFont.load({
+        // For google fonts
+        google: {
+          families: ['Roboto'],
+        },
+        // For early access or custom font
+        custom: {
+          families: ['Noto Sans KR'],
+          urls: ['https://fonts.googleapis.com/earlyaccess/notosanskr.css'],
+        },
+      });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-72047520-5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<head>
-	<title>제주코딩베이스캠프</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
-	<script type="text/javascript">
-		WebFont.load({
-			// For google fonts
-			google: {
-				families: ["Roboto"],
-			},
-			// For early access or custom font
-			custom: {
-				families: ["Noto Sans KR"],
-				urls: ["https://fonts.googleapis.com/earlyaccess/notosanskr.css"],
-			},
-		});
-	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72047520-5"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag("js", new Date());
+      gtag('config', 'UA-72047520-5');
+    </script>
 
-		gtag("config", "UA-72047520-5");
-	</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta
+      name="description"
+      content="4박 5일, 제주에서 HTML부터 파이썬까지 배우고 해커톤을 통해 미니 프로젝트도 완성해보세요."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="제주코딩베이스캠프" />
+    <meta
+      property="og:description"
+      content="4박 5일, 제주에서 HTML부터 파이썬까지 배우고 해커톤을 통해 미니 프로젝트도 완성해보세요."
+    />
+    <meta
+      property="og:image"
+      content="http://www.jejucodingcamp.com/images/homeicon.png"
+    />
+    <meta property="og:url" content="http://www.jejucodingcamp.com" />
+    <link rel="apple-touch-icon" href="images/homeicon.png" />
+    <link rel="shortcut icon" href="images/homeicon.png" />
+    <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png" />
+    <link rel="image_src" href="images/homeicon.png" />
+    <link rel="stylesheet" href="css/jejucoding.css" />
+  </head>
 
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-	<meta name="description" content="4박 5일, 제주에서 HTML부터 파이썬까지 배우고 해커톤을 통해 미니 프로젝트도 완성해보세요." />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="제주코딩베이스캠프" />
-	<meta property="og:description" content="4박 5일, 제주에서 HTML부터 파이썬까지 배우고 해커톤을 통해 미니 프로젝트도 완성해보세요." />
-	<meta property="og:image" content="http://www.jejucodingcamp.com/images/homeicon.png" />
-	<meta property="og:url" content="http://www.jejucodingcamp.com" />
-	<link rel="apple-touch-icon" href="images/homeicon.png" />
-	<link rel="shortcut icon" href="images/homeicon.png" />
-	<link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png" />
-	<link rel="image_src" href="images/homeicon.png" />
-	<link rel="stylesheet" href="css/jejucoding.css" />
-</head>
+  <body id="home">
+    <nav class="navi">
+      <ul>
+        <li><a href="#home">홈</a></li>
+        <li><a href="#staff">강사진</a></li>
+        <li><a href="#information">안내사항</a></li>
+        <li><a href="#schedule">스케줄</a></li>
+        <li><a href="#apply">접수하기</a></li>
+        <li><a href="#file">자료실</a></li>
+        <li><a href="#photo">사진</a></li>
+      </ul>
+    </nav>
+    <div class="page-container">
+      <div class="witch">
+        <div class="witch-item witch__jeju"></div>
+        <div class="witch-item witch__arm-right"></div>
+        <div class="witch-item witch__body"></div>
+        <div class="witch-item witch__wand"></div>
+        <div class="witch-item witch__arm-left"></div>
+        <div class="witch-item witch__halla"></div>
+        <div class="witch-item witch__message">
+          <span>비상!! 폭발로 인한 마법구슬의 유실로</span><br /><span
+            >페이지가 붕괴되었습니다!!</span
+          ><br /><span>2개의 마법구슬을 백록담에 넣어 주세요!</span>
+        </div>
+        <div class="witch__arrow"></div>
+      </div>
+      <div class="page">
+        <div class="slide-item visible">
+          <header class="global-header">
+            <h1 class="global-header__title block">
+              <img src="images/logo.svg" alt="제주코딩 베이스캠프" />
+            </h1>
+            <button class="btn-explosion"><span>폭발</span></button>
+          </header>
+        </div>
+        <article class="content">
+          <!-- 인사말 -->
+          <header class="content__header">
+            <div class="slide-item">
+              <p class="para block">
+                개발자는 단기간 양성될 수 없습니다. 하지만, 개발 과정은 단기간에
+                훑어볼 수 있어요. 서비스 기획부터, 서비스 배포까지. 우리가
+                청년들에게 보여주는 것은 단순 지식보다는 '당신을 위한
+                정성'일지도 모르겠습니다.
+              </p>
+            </div>
+            <div class="slide-item">
+              <p class="para block">
+                16기입니다. 사실 앞으로 얼마나 더 할 수 있을지 모르겠어요. 매번
+                이번이 마지막일 것 같으니 정말 제대로 해보자는 마음으로 여기까지
+                왔습니다. 마음으로, 여러분이 써주신 10장의 지원서만큼이나
+                간절함으로 캠프를 준비해갑니다.
+              </p>
+            </div>
+            <div class="slide-item">
+              <p class="para block">
+                서비스 기획부터 런칭까지 같이 해봅니다. 에러 잡아드려요.
+                대표님이거나 디자이너이신가요? 개발자와 소통할 수 있습니다.
+                런칭하고 싶은 서비스가 있으셨어요? 완전하지는 않지만 애자일하게
+                런칭할 수 있어요. 코딩 처음 해보시나요? 괜찮습니다. 여기
+                기초부터 합니다. 더 낮은 단계도 없습니다.
+              </p>
+            </div>
+            <div class="slide-item">
+              <p class="para block">
+                같이 몰입해봐요. 우리는 어쩌면 너무도 많은 잡음으로 인해 하나의
+                결과를 못 만드는 것은 아닐까요? 함께 합시다. 또, 오시면 교육뿐만
+                아니라 좋은 기회들도 열려 있습니다. :)
+              </p>
+            </div>
+            <div class="slide-item">
+              <p class="para block">평안하세요. 캠프에서 뵙겠습니다.</p>
+            </div>
+            <div class="slide-item">
+              <p class="signature para block">- 위니브 대표, 이호준</p>
+            </div>
+          </header>
+          <!-- //인사말 -->
 
-<body id="home">
-	<nav class="navi">
-		<ul>
-			<li><a href="#home">홈</a></li>
-			<li><a href="#staff">강사진</a></li>
-			<li><a href="#information">안내사항</a></li>
-			<li><a href="#schedule">스케줄</a></li>
-			<li><a href="#apply">접수하기</a></li>
-			<li><a href="#file">자료실</a></li>
-			<li><a href="#photo">사진</a></li>
-		</ul>
-	</nav>
-	<div class="page-container">
-		<div class="witch">
-			<div class="witch-item witch__jeju"></div>
-			<div class="witch-item witch__arm-right"></div>
-			<div class="witch-item witch__body"></div>
-			<div class="witch-item witch__wand"></div>
-			<div class="witch-item witch__arm-left"></div>
-			<div class="witch-item witch__halla"></div>
-			<div class="witch-item witch__message">
-				<span>비상!! 폭발로 인한 마법구슬의 유실로</span><br /><span>페이지가 붕괴되었습니다!!</span><br /><span>2개의 마법구슬을 백록담에 넣어 주세요!</span>
-			</div>
-			<div class="witch__arrow"></div>
-		</div>
-		<div class="page">
-			<div class="slide-item visible">
-				<header class="global-header">
-					<h1 class="global-header__title block"><img src="images/logo.svg" alt="제주코딩 베이스캠프" /></h1>
-					<button class="btn-explosion"><span>폭발</span></button>
-				</header>
-			</div>
-			<article class="content">
-				<!-- 인사말 -->
-				<header class="content__header">
-					<div class="slide-item">
-						<p class="para block">
-							개발자는 단기간 양성될 수 없습니다. 하지만, 개발 과정은 단기간에 훑어볼 수 있어요. 서비스 기획부터, 서비스 배포까지. 우리가 청년들에게 보여주는 것은 단순 지식보다는 '당신을 위한
-							정성'일지도 모르겠습니다.
-						</p>
-					</div>
-					<div class="slide-item">
-						<p class="para block">
-							15기입니다. 사실 앞으로 얼마나 더 할 수 있을지 모르겠어요. 매번 이번이 마지막일 것 같으니 정말 제대로 해보자는 마음으로 여기까지 왔습니다. 마음으로, 여러분이 써주신 10장의
-							지원서만큼이나 간절함으로 캠프를 준비해갑니다.
-						</p>
-					</div>
-					<div class="slide-item">
-						<p class="para block">
-							서비스 기획부터 런칭까지 같이 해봅니다. 에러 잡아드려요. 대표님이거나 디자이너이신가요? 개발자와 소통할 수 있습니다. 런칭하고 싶은 서비스가 있으셨어요? 완전하지는 않지만 애자일하게
-							런칭할 수 있어요. 코딩 처음 해보시나요? 괜찮습니다. 여기 기초부터 합니다. 더 낮은 단계도 없습니다.
-						</p>
-					</div>
-					<div class="slide-item">
-						<p class="para block">
-							같이 몰입해봐요. 우리는 어쩌면 너무도 많은 잡음으로 인해 하나의 결과를 못 만드는 것은 아닐까요? 함께 합시다. 또, 오시면 교육뿐만 아니라 좋은 기회들도 열려 있습니다. :)
-						</p>
-					</div>
-					<div class="slide-item">
-						<p class="para block">평안하세요. 캠프에서 뵙겠습니다.</p>
-					</div>
-					<div class="slide-item">
-						<p class="signature para block">- 위니브 대표, 이호준</p>
-					</div>
-				</header>
-				<!-- //인사말 -->
+          <!-- 강사진 -->
+          <section class="content-section staff para" id="staff">
+            <header class="slide-item">
+              <h2 class="content-section__title block">강사진</h2>
+            </header>
 
-				<!-- 강사진 -->
-				<section class="content-section staff para" id="staff">
-					<header class="slide-item">
-						<h2 class="content-section__title block">강사진</h2>
-					</header>
+            <!-- 이호준 -->
+            <div class="slide-item">
+              <div class="moving-bar"></div>
+              <div class="staff__item block">
+                <div class="staff__name">이호준</div>
+                <div class="staff__history">
+                  현) 주식회사 <a href="http://paullab.co.kr/" target="_blank">위니브</a> 대표<br />
+                  현) 바울랩아이씨티기술연구원 대표<br />
+                  현) 바울랩아이씨티컴퓨터학원 대표<br />
+                  현) 제주 코딩 베이스캠프,
+                  <a href="https://jejualcam.co.kr/" target="_blank">제주 알고리즘 베이스캠프</a> 운영진<br />
+                  현) 지역 기반 스터디 그룹 플랫폼,
+                  <a href="https://www.studyin.co.kr/" target="_blank">스터디인</a> 운영<br />
+                  현) 파이썬 교육 플랫폼, <a href="https://world.weniv.co.kr/" target="_blank">위니브월드</a> 운영<br />
+                  현) 유튜브
+                  <a
+                    href="https://www.youtube.com/channel/UC4GnvNKtuJ4cqWsYjxNxAEQ"
+                    target="_blank"
+                    >제주코딩베이스캠프</a> 운영<br />
+                  현) 제주스타트업협회(JSA) 부회장<br />
+                  현) Google Developers Group JEJU Organizer<br />
+                  전) 신한금융그룹 정보보안 담당<br />
+                </div>
+              </div>
+            </div>
+            <!-- //이호준 -->
 
-					<!-- 이호준 -->
-					<div class="slide-item">
-						<div class="moving-bar"></div>
-						<div class="staff__item block">
-							<div class="staff__name">이호준</div>
-							<div class="staff__history">
-								현) 주식회사 <a href="http://paullab.co.kr/" target="_blank">위니브</a> 대표<br />
-								현) 바울랩아이씨티기술연구원 대표<br />
-								현) 바울랩아이씨티컴퓨터학원 대표<br />
-								현) 제주 코딩 베이스캠프, <a href="https://jejualcam.co.kr/" target="_blank">제주 알고리즘 베이스캠프</a> 운영진<br />
-								현) 지역 기반 스터디 그룹 플랫폼, <a href="https://www.studyin.co.kr/" target="_blank">스터디인</a> 운영<br />
-								현) 유튜브 <a href="https://www.youtube.com/channel/UC4GnvNKtuJ4cqWsYjxNxAEQ" target="_blank">제주코딩베이스캠프</a>
-								운영<br />
-								현) 제주스타트업협회(JSA) 부회장<br />
-								현) Google Developers Group JEJU Organizer<br />
-								전) 신한금융그룹 정보보안 담당<br />
-							</div>
-						</div>
-					</div>
-					<!-- //이호준 -->
+            <!-- 한재현 -->
+            <div class="slide-item">
+              <div class="moving-bar"></div>
+              <div class="staff__item block">
+                <div class="staff__name">한재현</div>
+                <div class="staff__history">
+                  전) 다음 포털 검색 개발 담당<br />
+                  전) 카카오톡 샵검색 개발 담당<br />
+                  전) CS Back-End 개발자<br />
+                  전) (카카오 자회사) DK-Techin Front-End 개발자<br />
+                  현) 멋쟁이 사자처럼 프론트엔드 스쿨 강사<br />
+                  현) 주식회사 위니브 Front-End 개발자
+                </div>
+              </div>
+            </div>
+            <!-- //한재현 -->
 
-					<!-- 한재현 -->
-					<div class="slide-item">
-						<div class="moving-bar"></div>
-						<div class="staff__item block">
-							<div class="staff__name">한재현</div>
-							<div class="staff__history">
-								전) 다음 포털 검색 개발 담당<br />
-								전) 카카오톡 샵검색 개발 담당<br />
-								전) CS Back-End 개발자<br />
-								전) (카카오 자회사) DK-Techin Front-End 개발자<br />
-								현) 멋쟁이 사자처럼 프론트엔드 스쿨 강사<br />
-								현) 주식회사 위니브 Front-End 개발자
-							</div>
-						</div>
-					</div>
-					<!-- //한재현 -->
+            <!-- 유준모 -->
+            <div class="slide-item">
+              <div class="moving-bar"></div>
+              <div class="staff__item block">
+                <div class="staff__name">유준모</div>
+                <div class="staff__history">
+                  전) 한글과컴퓨터 UI 디자이너/Front-end 개발자<br />
+                  현)
+                  <a href="http://www.studiomeal.com" target="_blank">스튜디오밀</a> 대표<br />
+                  현) 유튜브 <a href="https://www.youtube.com/1분코딩/" target="_blank">1분코딩</a>,
+                  페이스북 <a href="https://www.facebook.com/1mincoding/" target="_blank">1분코딩</a> 운영
+                </div>
+              </div>
+            </div>
+            <!-- //유준모 -->
 
-					<!-- 유준모 -->
-					<div class="slide-item">
-						<div class="moving-bar"></div>
-						<div class="staff__item block">
-							<div class="staff__name">유준모</div>
-							<div class="staff__history">
-								전) 한글과컴퓨터 UI 디자이너/Front-end 개발자<br />
-								현) <a href="http://www.studiomeal.com" target="_blank">스튜디오밀</a> 대표<br />
-								현) 유튜브 <a href="https://www.youtube.com/1분코딩/" target="_blank">1분코딩</a>, 페이스북 <a
-									href="https://www.facebook.com/1mincoding/" target="_blank">1분코딩</a> 운영
-							</div>
-						</div>
-					</div>
-					<!-- //유준모 -->
+            <!-- 이범재 -->
+            <div class="slide-item">
+              <div class="moving-bar"></div>
+              <div class="staff__item block">
+                <div class="staff__name">이범재</div>
+                <div class="staff__history">현) 주식회사 위니브 테크리드</div>
+              </div>
+            </div>
+            <!-- //이범재 -->
+          </section>
+          <!-- // 강사진 -->
 
-					<!-- 이범재 -->
-					<div class="slide-item">
-						<div class="moving-bar"></div>
-						<div class="staff__item block">
-							<div class="staff__name">이범재</div>
-							<div class="staff__history">
-								현) 주식회사 위니브 테크리드
-							</div>
-						</div>
-					</div>
-					<!-- //이범재 -->
-				</section>
-				<!-- // 강사진 -->
+          <!-- 안내사항 -->
+          <section class="content-section information para" id="information">
+            <header class="slide-item">
+              <h2 class="content-section__title block">안내사항</h2>
+            </header>
+            <div class="slide-item">
+              <ul class="info-list block">
+                <li>
+                  <div class="info-list__content">
+                    제주코딩베이스캠프는 기초부터 강의가 준비되어 있으나 HTML,
+                    CSS, Python 기초에 대해 예습하고 오시면 수업 진행이
+                    원활합니다.<br />
+                  </div>
+                </li>
+                <li>
+                  <div class="info-list__content">
+                    사전 예습 무료 강좌 : <a href="https://inf.run/KaAS" target="_blank">무료 30분 요약강좌 바로가기</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
-				<!-- 안내사항 -->
-				<section class="content-section information para" id="information">
-					<header class="slide-item">
-						<h2 class="content-section__title block">안내사항</h2>
-					</header>
-					<div class="slide-item">
-						<ul class="info-list block">
-							<li>
-								<div class="info-list__content">제주코딩베이스캠프는 기초부터 강의가 준비되어 있으나 HTML, CSS, Python 기초에 대해 예습하고 오시면 수업 진행이
-									원활합니다.<br /></div>
-							</li>
-							<li>
-								<div class="info-list__content">
-									사전 예습 무료 강좌 :
-									<a
-										href="https://www.inflearn.com/course/%EC%A0%9C%EC%A3%BC%EC%BD%94%EB%94%A9-%EC%9B%B9%EA%B0%9C%EB%B0%9C-30%EB%B6%84%EC%9A%94%EC%95%BD">무료
-										30분 요약강좌 바로가기</a>
-								</div>
-							</li>
-						</ul>
-					</div>
+            <div class="slide-item">
+              <ul class="info-list block">
+                <li>
+                  <div class="info-list__content">
+                    2월 19일~23일(9:00~18:00) - 제주 코딩 베이스캠프 16기(20명)
+                  </div>
+                </li>
+                <li>
+                  <div class="info-list__content">
+                    접수기간 : 1월 22일~2월 4일(18시)
+                  </div>
+                </li>
+                <li>
+                  <div class="info-list__content">합격자 발표 : 2월 5일(합격자 개별 연락)</div>
+                </li>
+                <li>
+                  <div class="info-list__content">
+                    교육장소: 제주산학융합지구 캠퍼스관 1층 세미나실2 <br />
+                    * 주소: 제주시 첨단로8길 40, 산학융합지구 캠퍼스관 1층<br />
+                    <a href="https://naver.me/GQyI5WDB">네이버 지도 보기</a>
+                    <a href="http://kko.to/g2qxXDECJ">카카오 지도 보기</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-list__content">
+                    <strong class="emphasis">캠프는 매년 대학생 여름방학, 겨울방학에 맞춰 진행됩니다.</strong>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- // 안내사항 -->
 
-					<div class="slide-item">
-						<ul class="info-list block">
-							<li>
-								<div class="info-list__content">8월 16일~26일(9:00~18:00) - 제주 코딩 베이스캠프 15기(40명)</div>
-							</li>
-							<li>
-								<div class="info-list__content">접수기간 : 8월 1일~7일(18시)</div>
-							</li>
-							<li>
-								<div class="info-list__content">합격자 발표 : 8월 10일</div>
-							</li>
-							<li>
-								<div class="info-list__content">
-									교육장소: 제주산학융합지구 캠퍼스관 3층 PC강의실 <br />
-									* 주소: 제주시 첨단로 8길 36, 산학융합지구 캠퍼스관 3층<br />
-									<a href="https://naver.me/GQyI5WDB">네이버 지도 보기</a>
-									<a href="http://kko.to/g2qxXDECJ">카카오 지도 보기</a>
-								</div>
-							</li>
-							<li>
-								<div class="info-list__content"><strong class="emphasis">캠프는 매년 대학생 여름방학, 겨울방학에 맞춰 진행됩니다.</strong></div>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<!-- // 안내사항 -->
+          <!-- 스케줄 -->
+          <section class="content-section schedule para" id="schedule">
+            <header class="slide-item">
+              <h2 class="content-section__title block">
+                제주 코딩 베이스캠프 스케줄
+              </h2>
+            </header>
+            <ol class="schedule-ol block">
+              <li class="schedule__item slide-item">
+                <div class="moving-bar"></div>
+                <p>Day 1 <strong>02.19(월)</strong></p>
+                <ol>
+                  <li>
+                    <span>09:00 ~ 12:00</span>
+                    <ul>
+                      <li>캠프 소개 및 캠프 공간 소개</li>
+                      <li>font-end, back-end 동작 방식</li>
+                      <li>Network 동작 방식</li>
+                      <li>서비스 배포까지 필요한 것</li>
+                      <li>개발자 도구(VSC, git 등) 세팅</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span>12:00 ~ 13:00</span>
+                    <span>점심시간</span>
+                  </li>
+                  <li>
+                    <span>13:00 ~ 18:00</span>
+                    <ul>
+                      <li>HTML Living Standard 태그, 동작 방식, 골격 구성</li>
+                      <li>reset code</li>
+                      <li>벤더프리픽스</li>
+                      <li>선택자와 선택자 우선순위</li>
+                      <li>Box Model</li>
+                      <li>flex & grid</li>
+                      <li>transition과 transform</li>
+                      <li>웹 접근성과 SEO</li>
+                      <li>미디어쿼리</li>
+                      <li>CSS 동작 방식 및 디자인 활용</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li class="schedule__item slide-item">
+                <div class="moving-bar"></div>
+                <p>Day 2 <strong>02.20(화)</strong></p>
+                <ol>
+                  <li>
+                    <span>09:00 ~ 12:00</span>
+                    <ul>
+                      <li>Bootstrap, Tailwind CSS를 이용한 웹 개발</li>
+                      <li>웹 서비스 기획</li>
+                      <li>개발자 도구(VSC extenstion, git 등) 설명</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span>12:00 ~ 13:00</span>
+                    <span>점심시간</span>
+                  </li>
+                  <li>
+                    <span>13:00 ~ 18:00</span>
+                    <ul>
+                      <li>Javascript 기초 문법</li>
+                      <li>map, set, filter 등의 실무 응용 code</li>
+                      <li>모달창 제작, 부드러운 스크롤 이동 등의 바닐라JS Code 살펴보기</li>
+                      <li>JSON과 fake server</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li class="schedule__item slide-item">
+                <div class="moving-bar"></div>
+                <p>Day 3 <strong>02.21(수)</strong></p>
+                <ol>
+                  <li>
+                    <span>09:00 ~ 12:00</span>
+                    <ul>
+                      <li>비동기 프로그래밍</li>
+                      <li>fetch, axios, promise, async, await</li>
+                      <li>DOM</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span>12:00 ~ 13:00</span>
+                    <span>점심시간</span>
+                  </li>
+                  <li>
+                    <span>13:00 ~ 18:00</span>
+                    <ul>
+                      <li>파이썬 소개 및 개발환경 세팅(Colab)</li>
+                      <li>타입과 변수, 연산자, 리스트, 튜플, 사전과 집합</li>
+                      <li>제어문(조건문과 반복 등)</li>
+                      <li>함수, type annotation</li>
+                      <li>Python Class, Meta Class</li>
+                      <li>Magic Method</li>
+                      <li>Class의 다양한 활용</li>
+                      <li>Python 아키텍처</li>
+                      <li>TDD, Clean Code</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li class="schedule__item slide-item">
+                <div class="moving-bar"></div>
+                <p>Day 4 <strong>02.22(목)</strong></p>
+                <ol>
+                  <li>
+                    <span>09:00 ~ 12:00</span>
+                    <ul>
+                      <li>Django 세팅 및 아키텍쳐 설명</li>
+                      <li>간단한 미니 Blog 세팅</li>
+                      <li>실 서비스 배포 로직(AWS 세팅, Docker, URL 구매 등)</li>
+                      <li>Django URL 설계</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span>12:00 ~ 13:00</span>
+                    <span>점심시간</span>
+                  </li>
+                  <li>
+                    <span>13:00 ~ 18:00</span>
+                    <ul>
+                      <li>Django template</li>
+                      <li>Model 설계와 ORM</li>
+                      <li>Django CRUD</li>
+                      <li>인증</li>
+                      <li>클라우드 서버 세팅</li>
+                      <li>Django로 만들어보는 제주 카페 지도</li>
+                      <li>댓글기능, 게시물관리기능등 자주 쓰이는 기능 구현</li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+              <li class="schedule__item slide-item">
+                <div class="moving-bar"></div>
+                <p>Day 5 <strong>02.23(금)</strong></p>
+                <ol>
+                  <li>
+                    <span>09:00 ~ 12:00</span>
+                    <ul>
+                      <li>해커톤 진행</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span>12:00 ~ 13:00</span>
+                    <span>점심시간</span>
+                  </li>
+                  <li>
+                    <span>13:00 ~ 17:00</span>
+                    <ul>
+                      <li>팀별 멘토링</li>
+                      <li>팀별 코드리뷰 진행</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span>17:00 ~ 18:00</span>
+                    <ul>
+                      <li>해커톤 결과 발표 및 심사</li>
+                    </ul>
+                  </li>
+                </ol>
+            </ol>
+          </section>
+          <!-- // 스케줄 -->
 
-				<!-- 스케줄 -->
-				<section class="content-section schedule para" id="schedule">
-					<header class="slide-item">
-						<h2 class="content-section__title block">제주 코딩 베이스캠프 스케줄</h2>
-					</header>
-					<ol class="schedule-ol block">
-						<li class="schedule__item slide-item">
-							<div class="moving-bar"></div>
-							<p>Day 1 <strong>08.16(화)</strong></p>
-							<ol>
-								<li>
-									<span>09:00 ~ 12:00</span>
-									<ul>
-										<li>캠프 소개 및 캠프 공간 소개</li>
-										<li>font-end, back-end 동작 방식</li>
-										<li>Network 동작 방식</li>
-										<li>서비스 배포까지 필요한 것</li>
-										<li>개발자 도구(VSC, git 등) 세팅</li>
-									</ul>
-								</li>
-								<li>
-									<span>12:00 ~ 13:00</span>
-									<span>점심시간</span>
-								</li>
-								<li>
-									<span>13:00 ~ 18:00</span>
-									<ul>
-										<li>HTML Living Standard 태그, 동작 방식, 골격 구성</li>
-										<li>reset code</li>
-										<li>벤더프리픽스</li>
-										<li>선택자와 선택자 우선순위</li>
-										<li>Box Model</li>
-									</ul>
-								</li>
-							</ol>
-						</li>
-						<li class="schedule__item slide-item">
-							<div class="moving-bar"></div>
-							<p>Day 2 <strong>08.17(수)</strong></p>
-							<ol>
-								<li>
-									<span>09:00 ~ 12:00</span>
-									<ul>
-										<li>flex & grid</li>
-										<li>transition과 transform</li>
-									</ul>
-								</li>
-								<li>
-									<span>12:00 ~ 13:00</span>
-									<span>점심시간</span>
-								</li>
-								<li>
-									<span>13:00 ~ 18:00</span>
-									<ul>
-										<li>웹 접근성과 SEO</li>
-										<li>미디어쿼리</li>
-										<li>CSS 동작 방식 및 디자인 활용</li>
-									</ul>
-								</li>
-							</ol>
-						</li>
-						<li class="schedule__item slide-item">
-							<div class="moving-bar"></div>
-							<p>Day 3 <strong>08.18(목)</strong></p>
-							<ol>
-								<li>
-									<span>09:00 ~ 12:00</span>
-									<ul>
-										<li>실전 Layout짜기 프로젝트 1</li>
-									</ul>
-								</li>
-								<li>
-									<span>12:00 ~ 13:00</span>
-									<span>점심시간</span>
-								</li>
-								<li>
-									<span>13:00 ~ 18:00</span>
-									<ul>
-										<li>실전 Layout짜기 프로젝트 2</li>
-									</ul>
-								</li>
-							</ol>
-						</li>
-						<li class="schedule__item slide-item">
-							<div class="moving-bar"></div>
-							<p>Day 4 <strong>08.19(금)</strong></p>
-							<ol>
-								<li>
-									<span>09:00 ~ 12:00</span>
-									<ul>
-										<li>Javascript 기초 문법</li>
-										<li>map, set, filter 등의 실무 응용 code</li>
-									</ul>
-								</li>
-								<li>
-									<span>12:00 ~ 13:00</span>
-									<span>점심시간</span>
-								</li>
-								<li>
-									<span>13:00 ~ 18:00</span>
-									<ul>
-										<li>모달창 제작, 부드러운 스크롤 이동 등의 바닐라JS Code 살펴보기</li>
-										<li>JSON과 fake server</li>
-									</ul>
-								</li>
-							</ol>
-						</li>
-						<li class="schedule__item slide-item">
-							<div class="moving-bar"></div>
-							<p>Day 5 <strong>08.20(토)</strong></p>
-							<ol>
-								<li>
-									<span>09:00 ~ 12:00</span>
-									<ul>
-										<li>비동기 프로그래밍</li>
-										<li>fetch, axios, promise, async, await</li>
-										<li>DOM</li>
-									</ul>
-								</li>
-								<li>
-									<span>12:00 ~ 13:00</span>
-									<span>점심시간</span>
-								</li>
-								<li>
-									<span>13:00 ~ 18:00</span>
-									<ul>
-										<li>Bootstrap, Tailwind CSS를 이용한 웹 개발</li>
-										<li>웹 서비스 기획</li>
-										<li>카카오 Oven, FreeMind를 이용한 웹 기획</li>
-										<li>개발자 도구(VSC extenstion, git 등) 설명</li>
-									</ul>
-								</li>
-							</ol>
-						</li>
-						<li class="schedule__item slide-item">
-							<div class="moving-bar"></div>
-							<p>Day 6 <strong>08.22(월)</strong></p>
-							<ol>
-								<li>
-									<span>09:00 ~ 12:00</span>
-									<ul>
-										<li>파이썬 소개 및 개발환경 세팅(Colab)</li>
-										<li>타입과 변수, 연산자, 리스트, 튜플, 사전과 집합</li>
-									</ul>
-								</li>
-								<li>
-									<span>12:00 ~ 13:00</span>
-									<span>점심시간</span>
-								</li>
-								<li>
-									<span>13:00 ~ 18:00</span>
-									<ul>
-										<li>제어문(조건문과 반복 등)</li>
-										<li>함수, type annotation</li>
-									</ul>
-								</li>
-							</ol>
-						</li>
-						<li class="schedule__item slide-item">
-							<div class="moving-bar"></div>
-							<p>Day 7 <strong>08.23(화)</strong></p>
-							<ol>
-								<li>
-									<span>09:00 ~ 12:00</span>
-									<ul>
-										<li>Python Class, Meta Class</li>
-										<li>Magic Method</li>
-									</ul>
-								</li>
-								<li>
-									<span>12:00 ~ 13:00</span>
-									<span>점심시간</span>
-								</li>
-								<li>
-									<span>13:00 ~ 18:00</span>
-									<ul>
-										<li>Class의 다양한 활용</li>
-										<li>Python 아키텍처</li>
-										<li>TDD, Clean Code</li>
-									</ul>
-								</li>
-							</ol>
-						</li>
-						<li class="schedule__item slide-item">
-							<div class="moving-bar"></div>
-							<p>Day 8 <strong>08.24(수)</strong></p>
-							<ol>
-								<li>
-									<span>09:00 ~ 12:00</span>
-									<ul>
-										<li>Django 세팅 및 아키텍쳐 설명</li>
-										<li>간단한 미니 Blog 세팅</li>
-									</ul>
-								</li>
-								<li>
-									<span>12:00 ~ 13:00</span>
-									<span>점심시간</span>
-								</li>
-								<li>
-									<span>13:00 ~ 18:00</span>
-									<ul>
-										<li>실 서비스 배포 로직(AWS 세팅, Docker, URL 구매 등)</li>
-									</ul>
-								</li>
-							</ol>
-						</li>
-						<li class="schedule__item slide-item">
-							<div class="moving-bar"></div>
-							<p>Day 9 <strong>08.25(목)</strong></p>
-							<ol>
-								<li>
-									<span>09:00 ~ 12:00</span>
-									<ul>
-										<li>Django URL 설계</li>
-										<li>Django template</li>
-									</ul>
-								</li>
-								<li>
-									<span>12:00 ~ 13:00</span>
-									<span>점심시간</span>
-								</li>
-								<li>
-									<span>13:00 ~ 18:00</span>
-									<ul>
-										<li>Model 설계와 ORM</li>
-										<li>Django CRUD</li>
-										<li>인증</li>
-									</ul>
-								</li>
-							</ol>
-						</li>
-						<li class="schedule__item slide-item">
-							<div class="moving-bar"></div>
-							<p>Day 10 <strong>08.26(금)</strong></p>
-							<ol>
-								<li>
-									<span>09:00 ~ 12:00</span>
-									<ul>
-										<li>클라우드 서버 세팅</li>
-										<li>Django로 만들어보는 제주 카페 지도</li>
-									</ul>
-								</li>
-								<li>
-									<span>12:00 ~ 13:00</span>
-									<span>점심시간</span>
-								</li>
-								<li>
-									<span>13:00 ~ 18:00</span>
-									<ul>
-										<li>댓글기능, 게시물관리기능등 자주 쓰이는 기능 구현</li>
-									</ul>
-								</li>
-							</ol>
-						</li>
-					</ol>
-				</section>
-				<!-- // 스케줄 -->
+          <!-- 접수하기 -->
+          <section class="content-section information para" id="apply">
+            <header class="slide-item">
+              <h2 class="content-section__title block">
+                제주코딩베이스캠프 접수하기
+              </h2>
+            </header>
+            <div class="slide-item">
+              <ul class="info-list block">
+                <li>
+                  <div class="info-list__content">
+                    노트북은 지참을 권장하며, 필요시 대여 가능합니다.
+                  </div>
+                </li>
+                <li>
+                  <div class="info-list__content">
+                    숙박과 교통비를 제공하지 않습니다.
+                  </div>
+                </li>
+                <li>
+                  <div class="info-list__content">
+                    해당 캠프는 전액 무료 캠프입니다.
+                  </div>
+                </li>
+                <li>
+                  <div class="info-list__content">
+                    문의 사항 : 운영진 위니브 <strong>010-7588-1826</strong>
+                  </div>
+                </li>
+              </ul>
+              <!-- <a
+                class="bnt-btn"
+                href="http://www.jejuiucc.or.kr/default/Bd/view.php?btable=notice&bno=427&p=1&lcate="
+                target="_blank"
+                >제주산학융합원 공지사항</a
+              > -->
+              <a
+                class="bnt-btn"
+                href="https://forms.gle/VHrUBC1nUwfMTopz6"
+                target="_blank"
+                >제주코딩베이스캠프 접수하기(1월 22일 접수 시작)</a>
+              <!-- <a class="bnt-btn" href="#" target="_blank">제주 코딩 베이스 캠프 합격자 발표</a> -->
+            </div>
+          </section>
+          <!-- //접수하기 -->
 
-				<!-- 접수하기 -->
-				<section class="content-section information para" id="apply">
-					<header class="slide-item">
-						<h2 class="content-section__title block">제주코딩베이스캠프 접수하기</h2>
-					</header>
-					<div class="slide-item">
-						<ul class="info-list block">
-							<li>
-								<div class="info-list__content">노트북은 지참을 권장하며, 필요시 대여 가능합니다.</div>
-							</li>
-							<li>
-								<div class="info-list__content">숙박과 교통비를 제공하지 않습니다.</div>
-							</li>
-							<li>
-								<div class="info-list__content">해당 캠프는 전액 무료 캠프입니다.</div>
-							</li>
-							<li>
-								<div class="info-list__content">행정 관련 문의 사항 : 제주산학융합원 <strong>070-8804-3368</strong></div>
-							</li>
-							<li>
-								<div class="info-list__content">커리큘럼 관련 문의 사항 : 이호준 대표 카카오톡 ID : paullab</div>
-							</li>
-						</ul>
-						<a class="bnt-btn" href="http://www.jejuiucc.or.kr/default/Bd/view.php?btable=notice&bno=427&p=1&lcate="
-							target="_blank">제주산학융합원 공지사항</a>
-						<a class="bnt-btn"
-							href="https://docs.google.com/forms/d/e/1FAIpQLScaneQQgGvtEDBPRMggbqfI5wPpAhgIyXF7WSl1DKeC0_EMQA/viewform"
-							target="_blank">제주코딩베이스캠프 접수하기</a>
-						<!-- <a class="bnt-btn" href="#" target="_blank">제주 코딩 베이스 캠프 합격자 발표</a> -->
-					</div>
-				</section>
-				<!-- //접수하기 -->
+          <!-- 자료실 -->
+          <section class="content-section information para" id="file">
+            <header class="slide-item">
+              <h2 class="content-section__title block">자료실</h2>
+            </header>
+            <div class="slide-item">
+              <ul class="info-list block">
+                <li>
+                  <div class="info-list__content">
+                    제주코딩베이스캠프은 다양한 플랫폼에서 온라인 강의를
+                    제공하고 있습니다. 로드맵을 참고하여 관심 있는 분야에 따라
+                    강의를 수강해보세요.
+                    <a
+                      class="bnt-btn"
+                      href="http://www.paullab.co.kr/curriculum.html"
+                      target="_blank"
+                      >제주코딩베이스캠프 온라인 커리큘럼!</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-list__content">
+                    코딩 연습장(PDF) 공유해드립니다. 어려운 내용을 차근차근
+                    설명을 덧붙여가며 쓰고 싶을 때 사용하시면 좋을 것 같습니다.
+                    모두 즐거운 코딩 되십시오.
+                    <a
+                      class="bnt-btn"
+                      href="./file/codingnote.pdf"
+                      target="_blank"
+                      >코딩 연습장 다운로드</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-list__content">
+                    제주코딩베이스캠프 2021년 무료 책 PDF 파일을 공유해드립니다.
+                    해당 파일은 리디북스에서도 보실 수 있습니다.
+                    <a
+                      class="bnt-btn"
+                      href="./file/2021_제주코딩베이스캠프(개정판)_배포용.pdf"
+                      target="_blank"
+                      >무료 책 다운로드</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-list__content">
+                    제주코딩베이스캠프 2021년 무료 책 Notion 링크를
+                    공유해드립니다.
+                    <a
+                      class="bnt-btn"
+                      href="https://www.notion.so/jejucodingcamp/Jeju-Coding-Basecamp-Home-ff529a96a4e5497eaadd7c5b12b60328"
+                      target="_blank"
+                      >Notion 링크 바로가기</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- //자료실 -->
 
-				<!-- 자료실 -->
-				<section class="content-section information para" id="file">
-					<header class="slide-item">
-						<h2 class="content-section__title block">자료실</h2>
-					</header>
-					<div class="slide-item">
-						<ul class="info-list block">
-							<li>
-								<div class="info-list__content">
-									제주코딩베이스캠프은 다양한 플랫폼에서 온라인 강의를 제공하고 있습니다. 로드맵을 참고하여 관심 있는 분야에 따라 강의를 수강해보세요.
-									<a class="bnt-btn" href="http://www.paullab.co.kr/curriculum.html" target="_blank">제주코딩베이스캠프 온라인
-										커리큘럼!</a>
-								</div>
-							</li>
-							<li>
-								<div class="info-list__content">
-									코딩 연습장(PDF) 공유해드립니다. 어려운 내용을 차근차근 설명을 덧붙여가며 쓰고 싶을 때 사용하시면 좋을 것 같습니다. 모두 즐거운 코딩 되십시오.
-									<a class="bnt-btn" href="./file/codingnote.pdf" target="_blank">코딩 연습장 다운로드</a>
-								</div>
-							</li>
-
-							<li>
-								<div class="info-list__content">
-									제주코딩베이스캠프 2021년 무료 책 PDF 파일을 공유해드립니다. 해당 파일은 리디북스에서도 보실 수 있습니다.
-									<a class="bnt-btn" href="./file/2021_제주코딩베이스캠프(개정판)_배포용.pdf" target="_blank">무료 책 다운로드</a>
-								</div>
-							</li>
-
-							<li>
-								<div class="info-list__content">
-									제주코딩베이스캠프 2021년 무료 책 Notion 링크를 공유해드립니다.
-									<a class="bnt-btn"
-										href="https://www.notion.so/jejucodingcamp/Jeju-Coding-Basecamp-Home-ff529a96a4e5497eaadd7c5b12b60328"
-										target="_blank">Notion 링크 바로가기</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<!-- //자료실 -->
-
-				<!-- 사진 -->
-				<section class="photos" id="photo">
-					<header class="slide-item">
-						<h2 class="content-section__title block">사진</h2>
-					</header>
-					<!-- 2022 -->
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-2022-1.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-2022-2.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-2022-3.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-2022-4.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-2022-5.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-2022-6.jpg" alt="" /></figure>
-					</div>
-					<!-- //2022 -->
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/13기사진.JPG" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/13기사진_2.JPG" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/card.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/insta.png" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/poster.png" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/kg.png" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-0.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-1.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-4.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-21.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-22.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-23.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-24.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-25.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-26.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-27.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-28.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-29.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-30.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-31.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-32.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-33.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-34.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-35.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-36.jpg" alt="" /></figure>
-					</div>
-					<div class="slide-item">
-						<figure class="photo-item"><img src="images/pic-37.jpg" alt="" /></figure>
-					</div>
-					<!--
+          <!-- 사진 -->
+          <section class="photos" id="photo">
+            <header class="slide-item">
+              <h2 class="content-section__title block">사진</h2>
+            </header>
+            <!-- 2022 -->
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-2022-1.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-2022-2.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-2022-3.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-2022-4.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-2022-5.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-2022-6.jpg" alt="" />
+              </figure>
+            </div>
+            <!-- //2022 -->
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/13기사진.JPG" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/13기사진_2.JPG" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/card.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/insta.png" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/poster.png" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/kg.png" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-0.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-1.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-4.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-21.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-22.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-23.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-24.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-25.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-26.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-27.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-28.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-29.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-30.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-31.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-32.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-33.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-34.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-35.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-36.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="slide-item">
+              <figure class="photo-item">
+                <img src="images/pic-37.jpg" alt="" />
+              </figure>
+            </div>
+            <!--
             <div class="slide-item"><figure class="photo-item"><a href="secret.html"><img src="images/pic-13.jpg" alt=""></a></figure></div>
             -->
-				</section>
-				<!-- //사진 -->
-			</article>
+          </section>
+          <!-- //사진 -->
+        </article>
 
-			<div class="slide-item footer-container">
-				<div class="moving-bar"></div>
-				<footer class="global-footer block para">
-					<div>제주코딩베이스캠프 since 2017</div>
-					<div>웹사이트 제작 - <a href="http://studiomeal.com" target="_blank">스튜디오밀</a></div>
-				</footer>
-			</div>
-		</div>
-		<div class="balls"></div>
-	</div>
-	<div class="loading"><i></i></div>
+        <div class="slide-item footer-container">
+          <div class="moving-bar"></div>
+          <footer class="global-footer block para">
+            <div>제주코딩베이스캠프 since 2017</div>
+            <div>
+              웹사이트 제작 -
+              <a href="http://studiomeal.com" target="_blank">스튜디오밀</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div class="balls"></div>
+    </div>
+    <div class="loading"><i></i></div>
 
-	<script src="./build/jejucoding.min.js"></script>
-	<!-- <script src="js/ext/modernizr.js"></script>
+    <script src="./build/jejucoding.min.js"></script>
+    <!-- <script src="js/ext/modernizr.js"></script>
 		<script src="js/jejucoding.js"></script>
 		<script src="js/jejucoding.audio.js"></script>
 		<script src="js/jejucoding.main.js"></script> -->
-</body>
-
+  </body>
 </html>
